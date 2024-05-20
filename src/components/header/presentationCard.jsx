@@ -2,6 +2,8 @@ import downloadIco from '@icons/dowload-icoW.png';
 import linkedinLogo from '@icons/linkedin-logo.png';
 import githubLogo from '@icons/github-logo.png';
 import { useSpring, animated } from 'react-spring';
+import AnimatedButton from '@components/AnimatedButton';
+import cvUrl from '@public/DiegoValenzuela_CV_En_2.pdf';
 
 function PresentationCard() {
   const styles = useSpring({
@@ -19,34 +21,45 @@ function PresentationCard() {
     window.open("https://www.linkedin.com/in/diego-pablo-valenzuela-palacios-979054202/", "_blank");
   }
 
+  function handleCVClick() {
+    console.log(cvUrl);
+    window.open(cvUrl, "_blank"); 
+  }
+
   return (
-    <div className="w-full h-[16.5rem] flex flex-col justify-center items-center gap-4">
+    <div className="w-4/6 h-[23rem] flex flex-col justify-center items-center gap-4 rounded-lg mt-10 bg-gray-900 border border-gray-700">
       <animated.h1 
         className="text-center text-6xl font-semibold" 
         style={styles}
       >
         Full-Stack Developer
       </animated.h1>
-      <p className="text-center text-4xl">Hi, I&apos;m Diego Valenzuela</p>
+      <p className="text-center text-4xl text-white">Hi, I&apos;m Diego Valenzuela</p>
       <div className="flex gap-4 justify-center">
-        <button className="bg-red-950 hover:bg-blue-700 text-white text-sm font-bold py-2 px-4 rounded-full">
-          Descargar CV
-          <img src={downloadIco} alt="Download" className="w-6 h-6 ml-1  inline-block" />
-        </button>
-        <button onClick={handleLinkedInClick} className="bg-indigo-950 hover:bg-blue-700 text-white text-sm font-bold py-2 px-4 rounded-full">
-          LinkedIn
-          <img src={linkedinLogo} alt="Linkedin" className="w-6 h-6 ml-1  inline-block" />
-        </button>
-        <button onClick={handleGithubClick} className="bg-stone-900 hover:bg-blue-700 text-white text-sm font-bold py-2 px-4 rounded-full">
-          Github
-          <img src={githubLogo} alt="Linkedin" className="w-6 h-6 ml-1  inline-block" />
-        </button>
+        <AnimatedButton 
+          onClick={handleCVClick} 
+          bgColor="bg-red-950" 
+          hoverColor="hover:bg-red-800" 
+          text="Descargar CV" 
+          icon={downloadIco} 
+        />
+        <AnimatedButton 
+          onClick={handleLinkedInClick} 
+          bgColor="bg-indigo-950" 
+          hoverColor="hover:bg-indigo-800" 
+          text="LinkedIn" 
+          icon={linkedinLogo} 
+        />
+        <AnimatedButton 
+          onClick={handleGithubClick} 
+          bgColor="bg-stone-800" 
+          hoverColor="hover:bg-stone-600" 
+          text="Github" 
+          icon={githubLogo} 
+        />
       </div>
     </div>
   );
 }
 
 export default PresentationCard;
-
-
-

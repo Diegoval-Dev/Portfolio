@@ -11,6 +11,7 @@ export default defineConfig({
       '@images': '/src/assets/images',
       '@icons': '/src/assets/icons',
       '@pages': '/src/views',
+      '@public': '/public',
     }
   }
 })
