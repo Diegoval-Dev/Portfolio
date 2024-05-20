@@ -5,15 +5,16 @@ import PropTypes from 'prop-types';
 function AnimatedButton({ onClick, bgColor, hoverColor, text, icon}) {
   const [styles, api] = useSpring(() => ({
     transform: 'scale(1)',
-    config: { tension: 300, friction: 10 },
+    boxShadow: '0px 0px 0px 0px rgba(255, 255, 255, 0)',
+    config: { tension: 400, friction: 12 },
   }));
 
   const handleMouseEnter = () => {
-    api.start({ transform: 'scale(1.1)' });
+    api.start({ transform: 'scale(1.1),', boxShadow: '0px 0px 20px 5px rgba(255, 255, 255, 0.5)' });
   };
 
   const handleMouseLeave = () => {
-    api.start({ transform: 'scale(1)' });
+    api.start({ transform: 'scale(1)', boxShadow: '0px 0px 0px 0px rgba(255, 255, 255, 0)' });
   };
 
   return (
