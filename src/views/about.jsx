@@ -2,7 +2,8 @@ import React from 'react';
 import Header from '@components/header/header';
 import AboutMe from '@components/aboutMe/aboutMe';
 import PresentationCard from '@components/header/presentationCard';
-import Projects from '@components/projects/projects';
+import Technologies from '@components/tecnologies/tecnologies';
+
 
 function About() {
   return (
@@ -11,7 +12,7 @@ function About() {
     <main className='flex flex-col items-center'>
       <PresentationCard />
       <AboutMe />
-      <Projects />
+      <Technologies />
     </main>
   </div>
   );
