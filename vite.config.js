@@ -10,8 +10,10 @@ export default defineConfig({
       '@styles': '/src/styles',
       '@images': '/src/assets/images',
       '@icons': '/src/assets/icons',
-      '@pages': '/src/views',
+      '@views': '/src/views',
       '@public': '/public',
+      '@hooks': '/src/hooks',
+      '@router': '/src/router',
     }
   }
 })

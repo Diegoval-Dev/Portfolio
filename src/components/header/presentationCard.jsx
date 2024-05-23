@@ -9,7 +9,7 @@ function PresentationCard() {
   const styles = useSpring({
     loop: { reverse: true },
     from: { color: 'rgb(249 115 22)' },
-    to: { color: 'rgb(55 48 163)' },
+    to: { color: 'rgb(225 225 225)' },
     config: { duration: 2000 },
   });
 
@@ -27,7 +27,7 @@ function PresentationCard() {
   }
 
   return (
-    <div className="w-4/6 h-[23rem] flex flex-col justify-center items-center gap-4 rounded-lg mt-10 bg-gray-900 border border-gray-700">
+    <div className="w-4/6 h-[23rem] flex flex-col justify-center items-center gap-4 rounded-lg mt-10 bg-radial-gradient border border-gray-700">
       <animated.h1 
         className="text-center text-6xl font-semibold" 
         style={styles}
