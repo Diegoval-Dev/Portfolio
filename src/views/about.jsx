@@ -3,6 +3,7 @@ import Header from '@components/header/header';
 import AboutMe from '@components/aboutMe/aboutMe';
 import PresentationCard from '@components/header/presentationCard';
 import Technologies from '@components/tecnologies/tecnologies';
+import Achievements from '@components/achievement/achievements';
 
 
 function About() {
@@ -15,6 +16,8 @@ function About() {
       <AboutMe />
       <h2 className='text-white text-4xl font-semibold mt-10'>Tecnologías</h2>
       <Technologies />
+      <h2 className='text-white text-4xl font-semibold mt-10'>Reconocimientos</h2>
+      <Achievements />
     </main>
   </div>
   );
