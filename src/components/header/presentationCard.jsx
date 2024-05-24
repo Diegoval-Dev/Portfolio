@@ -34,7 +34,7 @@ function PresentationCard() {
       >
         Full-Stack Developer
       </animated.h1>
-      <p className="text-center text-4xl text-white">Hi, I&apos;m Diego Valenzuela</p>
+      <p className="text-center text-4xl text-white">hola, soy Diego Valenzuela</p>
       <div className="flex gap-4 justify-center">
         <AnimatedButton 
           onClick={handleCVClick} 

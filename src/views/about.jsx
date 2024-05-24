@@ -11,7 +11,9 @@ function About() {
     <Header />
     <main className='flex flex-col items-center'>
       <PresentationCard />
+      <h2 className='text-white text-4xl font-semibold mt-10'>Sobre mí</h2>
       <AboutMe />
+      <h2 className='text-white text-4xl font-semibold mt-10'>Tecnologías</h2>
       <Technologies />
     </main>
   </div>
