@@ -1,8 +1,8 @@
 import React from 'react';
 import ProjectCard from './proyectCard';
-import habitadConnet from '@images/habitatConnect.png';
-import apiRest from '@images/APIREST.png';
-import apoAdmin from '@images/BlogAdmin.png';
+import habitadConnet from '@public/habitatConnect.png';
+import apiRest from '@public/APIREST.png';
+import apoAdmin from '@public/BlogAdmin.png';
 
 function Projects() {
   const projects = [

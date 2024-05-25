@@ -1,6 +1,6 @@
 import AchievementsCard from "./achievementsCard";
-import EstudianteDistinguido from "@images/EstudianteDistinguido2022.jpg";
-import MencionAcademica from "@images/MencionAcademica2023.jpg";
+import EstudianteDistinguido from "@public/EstudianteDistinguido2022.jpg";
+import MencionAcademica from "@public/MencionAcademica2023.jpg";
 
 function Achievements() {
   return (
